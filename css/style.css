@@ -5,15 +5,16 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
-.container {
+body .container {
   min-width: 1110 px;
   margin: auto;
   border: 1px solid red;
 }
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css-good */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -356,11 +357,13 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #ffffff;
+  padding-left: 165px;
+  padding-right: 165px;
 }
 
-.header__top {
+.navbar__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,10 +377,16 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 40px;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
@@ -385,17 +394,49 @@ template {
 
 .search__input {
   width: 350px;
-  height: 40px;
+  height: 100%;
   padding-left: 23px;
+  padding-right: 80px;
   background-color: #F5FAFE;
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #333;
+  color: #333333;
+  margin-left: 18;
 }
 
 .search__button {
   position: absolute;
+  right: 0;
   border: 1px solid red;
+  width: 65px;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user__name {
+  margin-left: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
